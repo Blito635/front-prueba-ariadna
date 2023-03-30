@@ -1,0 +1,23 @@
+<div >
+    <label>Dato buscar</label>
+    <input #title type="text">
+    <button class="boton" type="button" (click)="getData(title.value)"> Buscar</button>
+</div>
+<div *ngIf="items?.obj.length > 0">
+    <label for="Id">ID</label>
+    <input type="number" class="Id" disabled #id_producto value={{items?.obj[0].id_producto}}>
+    <label for="fecha">Fecha</label>
+    <input type="text" class="fecha" #fecha_creacion value={{items?.obj[0].fecha_creacion}}>
+    <label for="producto">Producto</label>
+    <input type="text" class="producto" #nombre_producto value={{items?.obj[0].nombre_producto}}>
+    <label for="nombre">Categoria</label>
+    <input type="text" class="nombre" #nombre value={{items?.obj[0].id}}>
+    <label for="precio">Precio</label>
+    <input type="money" class="precio" #precio value={{items?.obj[0].precio}}>
+    <label for="valor">Valor</label>
+    <input type="money" class="valor"  #valor value={{items?.obj[0].valor}}>
+    <label for="stock">Stock</label>
+    <input type="text" class="stock" #stock value={{items?.obj[0].stock}}>
+    <button type="button" (click)="cancelModificacion()">Cancelar</button>
+    <button type="button" (click)="modificarData(id_producto.value,nombre_producto.value,precio.value,valor.value,stock.value)">Crear</button>
+</div>

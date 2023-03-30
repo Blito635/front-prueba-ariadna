@@ -1,0 +1,25 @@
+<div *ngIf="items == null || items?.obj.length == 0">
+<label>Dato buscar</label>
+<input #title type="text">
+<button class="boton" type="button" (click)="getData(title.value)"> Buscar</button>
+</div>
+<div *ngIf="items?.obj.length > 0">
+<label for="Id">ID</label>
+<input type="text" class="Id" disabled value={{items?.obj[0].id_producto}}>
+<label for="fecha">Fecha</label>
+<input type="text" class="fecha" disabled value={{items?.obj[0].fecha_creacion}}>
+<label for="producto">Producto</label>
+<input type="text" class="producto" disabled value={{items?.obj[0].nombre_producto}}>
+<label for="nombre">Nombre</label>
+<input type="text" class="nombre" disabled value={{items?.obj[0].nombre}}>
+<label for="descripcion">Descripcion</label>
+<input type="text" class="descripcion" disabled value={{items?.obj[0].descripcion}}>
+<label for="precio">Precio</label>
+<input type="money" class="precio" disabled value={{items?.obj[0].precio}}>
+<label for="valor">Valor</label>
+<input type="money" class="valor"  disabled value={{items?.obj[0].valor}}>
+<label for="stock">Stock</label>
+<input type="text" class="stock" disabled value={{items?.obj[0].stock}}>
+<button type="button" (click)="cancelBusqueda()">Cancelar</button>
+<button type="button" (click)="deleteData(items?.obj[0].id_producto)">Eliminar</button>
+</div>

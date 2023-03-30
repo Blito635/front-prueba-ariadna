@@ -1,0 +1,21 @@
+.Headers{
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background: #333333;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.parrafo{
+    color: white;
+    margin-inline: 20px;
+    font-family: serif;
+}
+img{
+    width: 100%;
+  height: 100%;
+}
+

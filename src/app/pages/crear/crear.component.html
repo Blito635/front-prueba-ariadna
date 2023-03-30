@@ -1,0 +1,19 @@
+
+<div >
+    <label for="Id">ID</label>
+    <input type="number" class="Id" #id_producto>
+    <label for="fecha">Fecha</label>
+    <input type="date" class="fecha" #fecha_creacion>
+    <label for="producto">Producto</label>
+    <input type="text" class="producto" #nombre_producto>
+    <label for="nombre">Categoria</label>
+    <input type="text" class="nombre" #nombre>
+    <label for="precio">Precio</label>
+    <input type="money" class="precio" #precio>
+    <label for="valor">Valor</label>
+    <input type="money" class="valor"  #valor>
+    <label for="stock">Stock</label>
+    <input type="text" class="stock" #stock>
+    <button type="button" (click)="cancelCreacion()">Cancelar</button>
+    <button type="button" (click)="crearData(id_producto.value,fecha_creacion.value,nombre_producto.value,nombre.value,precio.value,valor.value,stock.value)">Crear</button>
+</div>

@@ -1,0 +1,45 @@
+nav ul {
+    margin: 0;
+    background: #333333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+nav ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px;
+    margin: 0 3px;
+    font-size: 20px;
+    font-family: Verdana;
+}
+nav ul li:hover div{
+    display: block;
+    position: absolute;
+}
+nav ul li div{
+    display: none;
+    left: 0;
+    width: 100%;
+    position: absolute;
+
+}
+
+
+nav ul li div ul{
+    background: white;
+    
+}
+nav ul li div ul li a {
+    color: black;
+}
