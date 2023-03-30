@@ -1,5 +1,9 @@
 # Ariadna
 
+## Prueba desarrollador
+
+Este codigo fue echo por Pablo Galvis para el puesto de desarrollador web
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
 ## Development server

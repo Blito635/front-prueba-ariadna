@@ -1,0 +1,26 @@
+div button{
+    background: #333333;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    margin: 15px;
+    color: aliceblue;
+    padding-inline: 20px;
+    
+}
+.boton{
+    grid-area: span 2/span 2;
+}
+div{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+}
+div label{
+    font-size: 20px;
+    font-family: Verdana;
+    margin: 5px 10px;
+}
