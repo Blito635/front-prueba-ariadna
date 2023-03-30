@@ -6,7 +6,7 @@ div button{
     margin: 15px;
     color: aliceblue;
     padding-inline: 20px;
-    
+    border-radius: 10px;
 }
 .boton{
     grid-area: span1/span 2;
